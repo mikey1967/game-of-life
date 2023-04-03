@@ -6,9 +6,9 @@
     - name: create a Pod
       command: kubectl apply -f mikey-pod.yaml
       args:
-        chdir: /home/mikey
+        chdir: /opt/kubernetes
 
     - name: create a Service
       command: kubectl apply -f mikey-service.yaml
       args:
-        chdir: /home/mikey
+        chdir: /opt/kubernetes
