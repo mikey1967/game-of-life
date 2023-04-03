@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mikey-service
+spec:
+  selector:
+    app: gameoflife
+  ports:
+    - port: 35000
+      targetPort: 8080
+  type: LoadBalancer
