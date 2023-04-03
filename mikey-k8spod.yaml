@@ -4,7 +4,7 @@
   become: yes
   tasks:
     - name: create a Pod
-      command: kubectl apply -f /home/mikey/opt/kubernetes/mikey-pod.yaml
+      command: kubectl apply -f mikey-pod.yaml
 
     - name: create a Service
-      command: kubectl apply -f /home/mikey/opt/kubernetes/mikey-service.yaml
+      command: kubectl apply -f mikey-service.yaml
