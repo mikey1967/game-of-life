@@ -4,11 +4,11 @@
   become: yes
   tasks:
     - name: create a Pod
-      command: kubectl apply -f mikey-pod.yaml
+      command: kubectl apply -f /home/mikey/mikey-pod.yaml
       args:
         chdir: /home/mikey
 
     - name: create a Service
-      command: kubectl apply -f mikey-service.yaml
+      command: kubectl apply -f /home/mikey/mikey-service.yaml
       args:
         chdir: /home/mikey
