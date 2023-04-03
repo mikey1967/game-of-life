@@ -2,6 +2,7 @@
 - name: k8s Pod
   hosts: all
   become: yes
+  user: mikey
   tasks:
     - name: create a Pod
       command: kubectl apply -f mikey-pod.yaml
