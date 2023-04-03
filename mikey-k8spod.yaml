@@ -4,7 +4,7 @@
   become: yes
   tasks:
     - name: create a Pod
-      command: kubectl apply -f ~/learn-terraform-provision-eks-cluster/mikey-pod.yaml
+      command: kubectl apply -f mikey-pod.yaml
 
     - name: create a Service
-      command: kubectl apply -f ~/learn-terraform-provision-eks-cluster/mikey-service.yaml
+      command: kubectl apply -f mikey-service.yaml
