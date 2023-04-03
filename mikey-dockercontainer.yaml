@@ -1,0 +1,16 @@
+---
+- name: create docker image
+  hosts: all
+  become: yes
+  tasks:
+    - name: create a docker image
+      command: docker image build -t mikey:1.0 .
+      args:
+        chdir: /opt/docker
+
+    - name: tag docker image
+      command: docker image tag mikey:1.0 mike8309/mikey:1.0
+
+    - name: push the image to dockerhub
+      command: docker image push mike8309/mikey:1.0
+    
