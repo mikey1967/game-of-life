@@ -5,11 +5,7 @@
   user: mikey
   tasks:
     - name: create a Pod
-      command: kubectl apply -f mikey-pod.yaml
-      args:
-        chdir: /home/mikey
+      command: /home/mikey/bin/kubectl apply -f mikey-pod.yaml
 
     - name: create a Service
-      command: kubectl apply -f mikey-service.yaml
-      args:
-        chdir: /home/mikey
+      command: /home/mikey/bin/kubectl apply -f mikey-service.yaml
