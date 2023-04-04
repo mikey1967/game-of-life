@@ -6,10 +6,10 @@
   tasks:
     - name: create a Pod
       command: kubectl apply -f mikey-pod.yaml
-      #args:
-       # chdir: /home/mikey
+      args:
+        chdir: /home/mikey
 
     - name: create a Service
       command: kubectl apply -f mikey-service.yaml
-      #args:
-        #chdir: /home/mikey
+      args:
+        chdir: /home/mikey
