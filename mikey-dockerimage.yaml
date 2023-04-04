@@ -13,4 +13,7 @@
 
     - name: push the image to dockerhub
       command: docker image push mike8309/mikey:1.0
+
+    - name: remove images
+      command: docker image rm -f $(docker image ls -q)
     
