@@ -2,6 +2,10 @@
   hosts: all
   become: yes
   tasks:
+    - name: k8s authentication
+      k8s_auth:
+        host: https://9E5606A5A978B908B7F1E5C50DD1BC7C.gr7.us-east-2.eks.amazonaws.com
+        username: arn:aws:eks:us-east-2:054561636315:cluster/education-eks-nGDnvDh9
     - name: create a Pod
       command: /home/mikey/kubectl apply -f /home/mikey/mikey-pod.yaml
     - name: create a Service
