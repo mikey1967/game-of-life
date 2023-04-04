@@ -5,6 +5,5 @@
   tasks:
     - name: create a Pod
       command: /home/mikey/kubectl apply -f /home/mikey/mikey-pod.yaml
-
     - name: create a Service
       command: /home/mikey/kubectl apply -f /home/mikey/mikey-service.yaml

@@ -2,6 +2,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: mikey-service
+  labels:
+    app: gameoflife
 spec:
   selector:
     app: gameoflife
