@@ -3,6 +3,6 @@
   become: yes
   tasks:
     - name: create a Pod
-      command: /home/mikey/kubectl apply -f mikey-pod.yaml
+      command: /home/mikey/kubectl apply -f /opt/kubernetes/mikey-pod.yaml
     - name: create a Service
-      command: /home/mikey/kubectl apply -f mikey-service.yaml
+      command: /home/mikey/kubectl apply -f /opt/kubernetes/mikey-service.yaml
