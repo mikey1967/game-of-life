@@ -3,8 +3,8 @@
   hosts: all
   become: yes
   tasks:
-    - name: remove container
-      command: docker container rm -f mikey
+    #- name: remove container
+      #command: docker container rm -f mikey
       
     - name: pull the image
       command: docker image pull mike8309/mikey:1.0

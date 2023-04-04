@@ -5,11 +5,11 @@
   user: mikey
   tasks:
     - name: create a Pod
-      shell: /home/mikey/bin/kubectl apply -f mikey-pod.yaml
-      args:
-        chdir: /home/mikey
+      command: kubectl apply -f mikey-pod.yaml
+      #args:
+       # chdir: /home/mikey
 
     - name: create a Service
-      shell: /home/mikey/bin/kubectl apply -f mikey-service.yaml
-      args:
-        chdir: /home/mikey
+      command: kubectl apply -f mikey-service.yaml
+      #args:
+        #chdir: /home/mikey
