@@ -5,7 +5,7 @@
   user: mikey
   tasks:
     - name: create a Pod
-      command: /home/mikey/bin/kubectl apply -f /home/mikey/mikey-pod.yaml
+      command: kubectl apply -f /home/mikey/mikey-pod.yaml
 
     - name: create a Service
-      command: /home/mikey/bin/kubectl apply -f /home/mikey/mikey-service.yaml
+      command: kubectl apply -f /home/mikey/mikey-service.yaml
